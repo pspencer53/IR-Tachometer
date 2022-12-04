@@ -3,22 +3,12 @@ This is my learning experience building a very low cost tachometer that I wanted
 ## Hardware 
 - Arduino Mini-Pro 
 These are now obsolete, but any arduino will do.  I just happen to have a few of these
-- OLED Display
+- OLED Display (Adafuit SSD1306 or equiv)
 - Battery Charger 
 - battery
 ## Code
+### Version A - Uses interrupt on a sensor pusle and counts time between pulses
 ```
-/*********
-  12/09/2021: PDS - Configure Tachometer by picking items from DIY Tach script
-  12/30/2021: PDS - Updated to use Sensor as a select switch.  Hold finger over sensor while powering on triggers a debug menu. 
-                  - Also, turn off Serial unless a menu (above) has been triggered. 
-  12/01/2022: PDS - Date Update to retain file
-                  - Added setTextColor(WHITE,BLACK) instead if just WHITE
-                  - Added a "erase a rectangle" to clear old messages below readings
-                  - TODO: Verify that the tach is calculating correctly (x/factor?)
-                  - TODO: Add an averaging function to smooth out the RPM jumping around. 
-*********/
-
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
