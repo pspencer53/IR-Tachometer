@@ -4,3 +4,4 @@ This is my learning experience building a very low cost tachometer that I wanted
 
 ### Help
  - [Github-flavored Markdown info page.](http://github.github.com/github-flavored-markdown/)
+ - [Mermaid](https://mermaid-js.github.io/mermaid/#/)
