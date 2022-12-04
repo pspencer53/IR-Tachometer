@@ -11,7 +11,7 @@ git add
 git commit -m "say something"
 ```
 ### Task Lists
-- [x] #739
+- [x] Create List
 - [ ] Add to task list
 - [ ] Close document
 
