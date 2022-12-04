@@ -1,10 +1,10 @@
 # IR-Tachometer
 This is my learning experience building a very low cost tachometer that I wanted to build to measure teh RPM of the spindles of the various CNC Routers that I have been using. 
 ## Hardware 
-- Arduino Mini-Pro ( $3.81)
+- Arduino Mini-Pro ( under $4.00) at [AliExpress](https://www.aliexpress.com/item/32821902128.html) 
 These are now obsolete, but any arduino will do.  I just happen to have a few of these
-- OLED Display (0.96" OLED Display Module 128X64 I2C SSD1306 for Arduino)(Uses Adafuit SSD1306 library)
-- Infrared Sensor ($1.40) ( 3pin IR Infrared barrier Module obstacle avoidance sensor)
+- OLED Display ($3.50)[0.96" OLED Display Module 128X64 I2C SSD1306 for Arduino](https://www.aliexpress.com/item/32920071528.html) (Uses Adafuit SSD1306 library)
+- Infrared Sensor ($2.00) ( 3pin IR Infrared barrier Module obstacle avoidance sensor) at [AliExpress](https://www.aliexpress.com/item/32952079917.html)
 - Lithium Battery Charger Module ($1.00) [Aliexpress](https://www.aliexpress.com/item/32986135934.html)
 - battery
 ## Code
