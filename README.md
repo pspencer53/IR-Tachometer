@@ -9,8 +9,7 @@ These are now obsolete, but any arduino will do.  I just happen to have a few of
 - battery 3.7v 450mAh or so. ($3.65 at [AliExpress](https://www.aliexpress.com/item/4000908332181.html) )
 ## Code
 There are several ways to do this.  I am testing all 3.
-this article[(https://how2electronics.com/digital-tachometer-ir-sensor-arduino/)
-1. Count pulses for a period of time using a loop.  This is way too scretchy and was only used as a reference [See 
+1. Count pulses for a period of time using a loop.  This is way too scretchy and was only used as a reference [See this article](https://how2electronics.com/digital-tachometer-ir-sensor-arduino/)
 1. The first to use interupts and to measure the time between pulses.  My first attempt at this was less than satsfying and was iffy at best.  It resulted in many errors and sporatic results.  The issue is that you need to average the time with a few previous results.  otherwise you get a rather abrupt single snapshot in time.  "One of" as is were.  Not reliable.
 2. A better method is to measure how many pulses occur for a known time, such as 500msec or 1 sec. [See Blinky with Timer1 OVF](https://blog.podkalicki.com/arduino-blinky-with-timer1-ovf/)
 3. Use a Grequency Count library such as from [PJRC for the Teensy](https://www.pjrc.com/teensy/td_libs_FreqCount.html)
