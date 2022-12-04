@@ -3,4 +3,4 @@ This is my learning experience building a very low cost tachometer that I wanted
 ## Hardware
 
 ### Help
- [Github-flavored Markdown info page.](http://github.github.com/github-flavored-markdown/)
+ - [Github-flavored Markdown info page.](http://github.github.com/github-flavored-markdown/)
