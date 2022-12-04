@@ -10,6 +10,11 @@ git status
 git add
 git commit -m "say something"
 ```
+### Task Lists
+- [x] Create task list
+- [ ] Add to task list
+- [ ] Close document
+
 
 ### Help
  - [Github-flavored Markdown info page.](http://github.github.com/github-flavored-markdown/)
