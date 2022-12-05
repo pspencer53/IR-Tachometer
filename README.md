@@ -10,11 +10,11 @@ These are now obsolete, but any arduino will do.  I just happen to have a few of
 ## Code
 There are several ways to do this.  I am testing all 3.
 1. Count pulses for a period of time using a loop.  This is way too sketchy and was only used as a reference ( [See this article](https://how2electronics.com/digital-tachometer-ir-sensor-arduino/) )
-2. Use interupts and measure the time between pulses.  My first attempt at this was less than satsfying and was iffy at best.  It resulted in many errors and sporatic results.  The issue is that you need to average the time with a few previous results.  otherwise you get a rather abrupt single snapshot in time.  "One of" as is were.  Not reliable.
+2. Use interupts and measure the time between pulses.  My first attempt at this was less than satsfying.   I added a running average function to smooth out the jitters and it works pretty well..
 3. Use interrupt to time a window and measure how many pulses occur during this window of time, such as 500msec or 1 sec. [See Blinky with Timer1 OVF](https://blog.podkalicki.com/arduino-blinky-with-timer1-ovf/)
 4. Use a Frequency Count library such as from [PJRC for the Teensy](https://www.pjrc.com/teensy/td_libs_FreqCount.html)
 
-I have implemented option 2 in the PW version and it works pretty well.  
+  
 
 ## Help
  - [Github-flavored Markdown info page.](http://github.github.com/github-flavored-markdown/)
