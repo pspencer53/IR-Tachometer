@@ -19,9 +19,9 @@ I implemented option 2, which handles lower RPM's pretty well.
 Essentially, the program sets up an interrupt to trip every time there is a pulse on the sensor, and measures the time since the last pules.  
 The RPM is calculated using the width of the pulse.  A 1 Second pulse as an example would be 60 RPM.   10mSec would be 6000 RPM. 
 
-I also implemented a "No Pulses detected" and "Too Close" based on teh sensor beign either always on or always off.  
+I also implemented a "No Pulses detected" and "Too Close" based on the sensor being either always on or always off.  
 
-The correct operation is when teh LED on teh sensor is flickering.  
+The correct operation is when the LED on the sensor is flickering.  
   
 
 ## Help
