@@ -14,6 +14,7 @@ There are several ways to do this.  I am testing all 3.
 3. Use interrupt to time a window and measure how many pulses occur during this window of time, such as 500msec or 1 sec. [See Blinky with Timer1 OVF](https://blog.podkalicki.com/arduino-blinky-with-timer1-ovf/)
 4. Use a Frequency Count library such as from [PJRC for the Teensy](https://www.pjrc.com/teensy/td_libs_FreqCount.html)
 
+I have implemented option 2 in the PW version and it works pretty well.  
 
 ## Help
  - [Github-flavored Markdown info page.](http://github.github.com/github-flavored-markdown/)
