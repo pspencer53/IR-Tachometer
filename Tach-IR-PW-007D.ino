@@ -8,7 +8,7 @@
                   - *DONE* TODO: Verify that the tach is calculating correctly (x/factor?)
                   - Add an averaging function to smooth out the RPM jumping around. 
                      ( https://www.aranacorp.com/en/implementation-of-the-moving-average-in-arduino/ )
-                    Added a *RAW* debug line below thwe smooth RPM 
+                    Added a *RAW* debug line below the smooth RPM text
                   - It is a wrap.
 *********/
 
@@ -108,6 +108,7 @@ void loop() {
       display.setTextSize(1);
       display.println("Move closer to a");
       display.println("spinny thingy");
+      display.println("until LED is blinking");
       display.setTextSize(2);
     } else {
       display.println("Too close");
@@ -125,7 +126,7 @@ void loop() {
     rpm = round(rpmfloat);
     display.setTextSize(1);
     display.setTextColor(WHITE,BLACK);
-    display.fillRect(0, 48, display.width(), display.height()-8, BLACK);
+    display.fillRect(0, 40, display.width(), display.height()-16, BLACK);
     display.setCursor(0, 48); 
     display.print(rpm);
     display.println(" RPM (raw)");
@@ -150,6 +151,7 @@ ISR(TIMER1_OVF_vect) {
 void RPM() {
   rpmtime = TCNT1;
     //if ( valSensorPin == 1) {
+      Serial.print("Pulse Width=");
       Serial.println(rpmtime);
     //}
   TCNT1 = 0;
